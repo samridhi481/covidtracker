@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid Tracker by samridhi</title>
+
+  <!-- Favicons -->
+  <link rel="shortcut icon"
+    href="https://res.cloudinary.com/duxhnzvyw/image/upload/v1673436448/Covid%20Tracker/favicon_jienmx.ico"
+    type="image/x-icon">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h3>Get Intuitive Covid Data Representation of Any Country</h3>
+    <form class="container-fluid" id="form">
+      <select name="country" id="country">
+      </select>
+
+      <div class="dates">
+        <label for="firstDate">Select Beginning Date: </label>
+        <input class="input-class" type="date" name="firstDate" id="firstDate" value="2020-04-01" min="2020-01-01"
+          max="2022-12-31">
+      </div>
+      <div class="dates">
+        <label for="lastDate">Select End Date: </label>
+        <input class="input-class" type="date" name="lastDate" id="lastDate" value="2020-10-02" min="2020-01-02"
+          max="2022-12-31">
+      </div>
+      <button class="button-class" id="submitButton" onclick="submitButton">Show</button>
+    </form>
+
+    <div id="chartReport">
+      </div>
+    </div>
+  </div>
+
+<script type="module" src="app.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@4.1.2/dist/chart.umd.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+
+</html>
